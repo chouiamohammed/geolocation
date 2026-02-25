@@ -1,0 +1,81 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", Arial, sans-serif;
+  background: linear-gradient(135deg, #e3ffe7 0%, #4f89ee 100%);
+}
+
+/* Glass Card */
+.card {
+  width: 400px;
+  padding: 40px 30px;
+  border-radius: 20px;
+
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Inputs */
+input {
+  padding: 12px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+
+  background-color: #007bff;
+  background: linear-gradient(135deg, #4f89ee, #007bff);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover,
+input[type="file"]::-webkit-file-upload-button:hover {
+  transform: translateY(-1px);
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
